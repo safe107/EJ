@@ -1,0 +1,150 @@
+type: collection.insomnia.rest/5.0
+name: Tutorial Crud
+meta:
+  id: wrk_284f0c61a927488198ef7211afe283ff
+  created: 1752860092678
+  modified: 1752860092678
+  description: ""
+collection:
+  - url: http://localhost:3000/cursos/0
+    name: Listagem de Cursos
+    meta:
+      id: req_47b3c4c0a6b142a6b5cdc624ad6e5e8c
+      created: 1752860223574
+      modified: 1752862152223
+      isPrivate: false
+      description: ""
+      sortKey: -1752860223575
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: false
+      rebuildPath: true
+  - url: http://localhost:3000/cursos
+    name: Listagem de todos os cursos
+    meta:
+      id: req_483dad15a3e84f4cad9f2cb6ab232c20
+      created: 1752861221444
+      modified: 1752861229909
+      isPrivate: false
+      description: ""
+      sortKey: -1752860145343
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: false
+      rebuildPath: true
+  - url: http://localhost:3000/cursos
+    name: Listagem de todos os cursos
+    meta:
+      id: req_662a83b50e1648ecb4f2818185753ebe
+      created: 1752861626684
+      modified: 1752862164982
+      isPrivate: false
+      description: ""
+      sortKey: -1752860106227
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name" : "cu"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: false
+      rebuildPath: true
+  - url: http://localhost:3000/cursos/2
+    name: Atualizar curso
+    meta:
+      id: req_70c50741ad81478d9e88b85b0e9b7b73
+      created: 1752861978500
+      modified: 1752862179614
+      isPrivate: false
+      description: ""
+      sortKey: -1752860086669
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name" : "cuzinho"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: false
+      rebuildPath: true
+  - url: http://localhost:3000/cursos/2
+    name: Deletar Curso
+    meta:
+      id: req_d9fc29f1408a47cdb17929d39fb4133b
+      created: 1752862064140
+      modified: 1752862189353
+      isPrivate: false
+      description: ""
+      sortKey: -1752860076890
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name" : "cursinho"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: false
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_682a59cbdecef3e25907d613ea256eb2dc7ec091
+    created: 1752860092684
+    modified: 1752860092684
+environments:
+  name: Base Environment
+  meta:
+    id: env_682a59cbdecef3e25907d613ea256eb2dc7ec091
+    created: 1752860092681
+    modified: 1752860092681
+    isPrivate: false
